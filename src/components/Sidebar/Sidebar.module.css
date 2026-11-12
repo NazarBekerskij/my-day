@@ -1,0 +1,137 @@
+
+.sidebar {
+  width: 270px;
+  min-height: 100vh;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px;
+  box-sizing: border-box;
+
+  background-color: #171629;
+  border-right: 1px solid #302a45;
+}
+
+/* Logo */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.brandIcon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #b15cff, #873fe2);
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.brand p {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #b7adca;
+  white-space: nowrap;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px;
+  border-radius: 10px;
+
+  color: #a7a4bc;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.navItem:hover {
+  background-color: #302a49;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #46366f;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.active:hover {
+  background-color: #514080;
+}
+
+/* Bottom mountains */
+
+.sidebarBottom {
+  margin-top: auto;
+
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-bottom: -24px;
+
+  width: calc(100% + 48px);
+  min-height: 260px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding: 20px 12px 30px;
+
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.6;
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 35%,
+    black 100%
+  );
+}
+
+.sidebarBottom p {
+  position: relative;
+  z-index: 1;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
